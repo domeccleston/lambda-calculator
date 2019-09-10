@@ -1,10 +1,21 @@
 import React from "react";
 import "./App.css";
+import { numbers, operators, specials } from './data.js';
+
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
+import Display from "./components/DisplayComponents/Display";
+import NumberButton from "./components/ButtonComponents/NumberButtons";
+import Numbers from "./components/ButtonComponents/NumberButtons";
+import OperatorButton from "./components/ButtonComponents/OperatorButtons";
+import Operators from "./components/ButtonComponents/OperatorButtons";
+import SpecialButton from "./components/ButtonComponents/SpecialButtons";
+import Specials from "./components/ButtonComponents/SpecialButtons";
+
+
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
