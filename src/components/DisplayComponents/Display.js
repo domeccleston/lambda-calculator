@@ -1,7 +1,8 @@
 import React from "react";
 
 const Display = (props) => {
-  return <div className="display">{/* Display any props data here */}</div>;
+  const displayArr = props.displayArr;
+  return <div className="display">{displayArr.map(num => num)}</div>;
 };
 
 export default Display;

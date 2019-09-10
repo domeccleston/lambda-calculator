@@ -10,7 +10,7 @@ import NumberButton from "./NumberButton";
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
 
-  const {numberName, displayNum} = props;
+  const {numberName, displayNum, displayArr} = props;
   return (
     <div className = "numbers">
       {/* STEP 3 - Use .map() to iterate over your array data and return a button

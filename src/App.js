@@ -27,13 +27,17 @@ function App() {
   // const [numberState, setNumberState] = useState(numbers);
   const [displayArr, setDisplay] = useState([]);
 
+  const displayNum = (number) => {
+    return setDisplay(displayArr.concat(number));
+  }
+
   return (
     <div className="container">
       <Logo className="logo"/>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display />
-        <Numbers />
+        <Display displayArr = {displayArr}/>
+        <Numbers displayNum = {displayNum}/>
       </div>
     </div>
   );
