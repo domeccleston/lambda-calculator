@@ -1,16 +1,19 @@
 .container {
     background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 60%;
+    border-radius: 1em;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    padding-bottom: 2.5em;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
+    margin-top: 0.25em;
+    margin-left: 0.35em;
+    height: 1.5em;
+    width: 5.5em;
+    border-radius: 5em;
     color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
@@ -20,3 +23,38 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+.logo {
+    padding: 1.5em 0 0 2em;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 2em;
+    margin-left: 0.5em;
+}
+.number-button {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 0.7em 1em 0.7em 1em;
+    font-size: 1.7em;
+    border-radius: 50%;
+    background-color: #184279;
+    margin-top: 0.5em;
+    --box-shadow-color: #322c2d;
+    box-shadow: 1px 5px var(--box-shadow-color);
+}
+
+.number-button:hover {
+    cursor:pointer;
+}
+
+.number-button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
